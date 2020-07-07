@@ -1,6 +1,6 @@
 ## version
 
-golang binary with version information, 
+golang binary with version information, inspired by github.com/g4zhuj/version-management-example
 
 ### Usage
 
@@ -18,7 +18,7 @@ build:
 	go build -ldflags "-X '${versionPath}.Version=${version}' \
 	                   -X '${versionPath}.BuildTime=$$buildTime' \
 	                   -X '${versionPath}.GoVersion=`go version`' \
-	                   -X '${versionPath}.GitCommit=`git rev-parse --short HEAD`'" -o ${outputPath}/${binaryName}; \
+	                   -X '${versionPath}.GitCommit=`git rev-parse --short HEAD`'" -o ${outputPath}/${binaryName}; 
 
 clean:
 	rm -rf _output
